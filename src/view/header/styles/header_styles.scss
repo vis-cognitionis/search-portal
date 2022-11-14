@@ -1,0 +1,11 @@
+@import "core/main-styles/main_colors.scss";
+@import "core/main-styles/main_texts.scss";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 27px 69px 0px 37px;
+  gap: 35px
+}

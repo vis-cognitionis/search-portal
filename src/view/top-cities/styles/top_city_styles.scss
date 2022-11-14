@@ -1,0 +1,65 @@
+@import "core/main-styles/main_colors.scss";
+@import "core/main-styles/main_texts.scss";
+
+.cityTitle {
+  font-family: $fontStyle1;
+  font-weight: $h4_fontWeight;
+  line-height: $h4_lineHeight;
+  font-size: $h4_fontSize;
+  margin: 0;
+  padding-left: 20px;
+  align-self: flex-start;
+}
+
+.cityContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  gap: 50px;
+  width: 100%;
+}
+
+.cityImageContainer {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  gap: 8px;
+}
+
+.cityImage {
+  width: 250px;
+  max-width: 250px;
+  height: 150px;
+  background-position: center;
+  background-size: cover;
+}
+
+.cityText {
+  width: 327px;
+  font-family: $fontStyle1;
+  font-size: $body1_fontSize;
+  font-weight: $body1_fontWeight;
+  line-height: $body1_lineHeight;
+  margin: 0;
+  color: $textDark;
+}
+
+.citySlider {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  width: 1029px;
+  max-width: 1029px;
+  overflow-x: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.citySliderContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+  align-items: center;
+}

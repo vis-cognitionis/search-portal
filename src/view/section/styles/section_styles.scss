@@ -1,0 +1,28 @@
+@import "core/main-styles/main_colors.scss";
+@import "core/main-styles/main_texts.scss";
+
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+}
+
+.sectionBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.logoText {
+  position: absolute;
+  bottom: -40px;
+  right: -30px;
+  font-family: $fontStyle2;
+  font-size: $subtitle3_fontSize;
+  font-weight: $subtitle3_fontWeight;
+}

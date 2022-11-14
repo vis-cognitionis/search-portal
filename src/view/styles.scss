@@ -1,0 +1,222 @@
+@import "core/main-styles/main_colors.scss";
+@import "core/main-styles/main_texts.scss";
+
+.returnList {
+  font-family: $fontStyle2;
+  font-size: $body5_fontSize;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 225px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 30px;
+}
+
+.inputTitle {
+  padding-left: 3px;
+  font-family: $fontStyle1;
+  font-size: $body3_fontSize;
+  font-weight: $body3_fontWeight;
+  line-height: $body3_lineHeight;
+  color: $textGrey;
+}
+
+.errorMessage {
+  position: absolute;
+  padding-left: 8px;
+  font-family: $fontStyle1;
+  font-size: $body3_fontSize;
+  font-weight: $body3_fontWeight;
+  line-height: $body3_lineHeight;
+  color: rgba($color: $error1, $alpha: 0.5);
+  top: 95px;
+}
+
+.errorBox {
+  width: 375px;
+  max-height: 123px;
+  background: $gray3;
+  border-radius: 8px;
+  color: red;
+  position: absolute;
+  right: 17px;
+  bottom: 24px;
+  padding: 13px 0px 18px 18px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  height: 92px;
+  max-height: 92px;
+  width: 245px;
+  justify-content: flex-end;
+}
+
+.errorTitle {
+  font-family: $fontStyle1;
+  font-size: $subtitle3_fontSize;
+  font-weight: $subtitle3_fontWeight;
+  line-height: $subtitle3_lineHeight;
+  color: $textDark;
+  margin: 0;
+}
+
+.errorContent {
+  font-family: $fontStyle1;
+  font-size: $subtitle4_fontSize;
+  font-weight: $subtitle4_fontWeight;
+  line-height: $subtitle4_lineHeight;
+  color: $textDark;
+  margin: 0;
+}
+
+.errorIcon {
+  width: 70px;
+  height: 32px;
+  background: $error2;
+  border-radius: 48px;
+  margin-top: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.errorIconText {
+  color: $white;
+  font-family: $fontStyle1;
+  font-size: $subtitle_fontSize;
+  font-weight: $subtitle_fontWeight;
+  line-height: $subtitle_lineHeight;
+}
+
+.orderBy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 126.28px;
+  height: 29.5px;
+  background: $gray2;
+  border: 1px solid $dark2;
+  border-radius: 8px;
+  cursor: pointer;
+  gap: 12px;
+}
+
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  width: 155.78px;
+  height: 135.11px;
+  background: #ffffff;
+  border: 1px solid #8f8f8f;
+  box-shadow: 4px 6px 12px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  gap: 2px;
+  padding-left: 8px;
+}
+
+.menuButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  color: $textDark;
+  font-family: $fontStyle2;
+  font-weight: $subtitle_fontWeight;
+  font-size: $subtitle_fontSize;
+  line-height: $subtitle3_lineHeight;
+  width: max-content;
+  height: 30px;
+  padding: 1;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: $gray1;
+    color: $white;
+  }
+}
+
+.resultListItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px;
+  height: 54px;
+
+  &:hover {
+    background: rgba(79, 117, 194, 0.21);
+    border-radius: 8px;
+  }
+}
+
+.resultList {
+  width: 726px;
+  height: max-content;
+}
+
+.resultListContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  position: relative;
+}
+
+.resultSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.listItem2 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.listItem3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 9px;
+}
+
+.resultLine {
+  width: 100%;
+  border: 1px solid #7e7e7e;
+  opacity: 0.4;
+}
+
+.noResult {
+  color: $textDark;
+  margin-top: -20px;
+  margin-left: -35px;
+}
+
+.pagination {
+  display: flex;
+  align-self: center;
+  padding-bottom: 150px;
+}
