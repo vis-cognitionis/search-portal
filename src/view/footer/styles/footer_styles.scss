@@ -1,0 +1,12 @@
+@import "core/main-styles/main_colors.scss";
+@import "core/main-styles/main_texts.scss";
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: $transparentSecondary;
+  height: 277px;
+  padding: 30px;
+  margin-top: 40px;
+}

@@ -1,0 +1,108 @@
+@import "core/main-styles/main_colors.scss";
+@import "core/main-styles/main_texts.scss";
+
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.searchBarInput {
+  width: 576px;
+  height: 45px;
+  border-radius: 8px;
+  border: 2px solid $dark1;
+  color: $textDark;
+  background: $white;
+  font-family: $fontStyle1;
+  font-size: $subtitle2_fontSize;
+  font-weight: $subtitle2_fontWeight;
+  line-height: $subtitle2_lineHeight;
+  padding-left: 50px;
+  &:hover {
+    border-color: rgba($color: $dark1, $alpha: 0.6);
+    background-color: rgba($color: $dark3, $alpha: 0.08);
+  }
+  &:focus {
+    outline-color: $primary;
+  }
+}
+
+.searchBarMenu {
+  box-sizing: border-box;
+  width: 717px;
+  background: $white;
+  border: 1px solid $dark1;
+  border-radius: 24px;
+  margin-left: -34px;
+  margin-top: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 50px;
+}
+
+.searchBarScrollMenu {
+  box-sizing: border-box;
+  width: auto;
+  height: max-content;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  margin-top: 8px;
+  padding-left: 16px;
+}
+
+.inputArea {
+  position: relative;
+}
+
+.inputAreaContainer {
+  flex-direction: row;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.iconSearch {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  width: 24px;
+  height: 24px;
+}
+
+.results {
+  color: $textDark;
+  font-family: $fontStyle1;
+  font-size: $subtitle2_fontSize;
+  font-weight: $subtitle2_fontWeight;
+  line-height: $subtitle2_lineHeight;
+}
+
+.showMore {
+  color: $textDark;
+  font-family: $fontStyle1;
+  font-size: $body1_fontSize;
+  font-weight: $body1_fontWeight;
+  line-height: $body1_lineHeight;
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  margin-top: -40px;
+  margin-left: 280px;
+}
+
+.nameSurname {
+  color: $textDark;
+  font-family: $fontStyle1;
+  font-size: $body4_fontSize;
+  font-weight: $body4_fontWeight;
+  line-height: $body4_lineHeight;
+}
+
+.smallTexts {
+  margin-top: -10px;
+  color: $gray5;
+}

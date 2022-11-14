@@ -1,0 +1,37 @@
+@import "core/main-styles/main_colors.scss";
+@import "core/main-styles/main_texts.scss";
+
+.paginationContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  width: 340px;
+  min-width: 340px;
+}
+
+.paginationButtons {
+  width: 85.71px;
+  min-width: 85.71px;
+  height: 25px;
+  background: $white;
+  border: 1px solid $dark1;
+  border-radius: 4px;
+  cursor: pointer;
+  &:disabled {
+    cursor: default;
+  }
+}
+
+.pageButtons {
+  box-sizing: border-box;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  background: $white;
+  border: 1px solid $dark1;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
