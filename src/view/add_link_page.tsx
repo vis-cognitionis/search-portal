@@ -147,6 +147,7 @@ const AddLinkPage = () => {
 
           return (
             <div
+              key={item.name}
               style={{
                 display: "flex",
                 flexDirection: "column",

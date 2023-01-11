@@ -32,7 +32,7 @@ const TopCities = () => {
         <div className="citySlider" ref={citySliderRef}>
           {cityData.map((item) => {
             return (
-              <div className="citytextContainer">
+              <div className="citytextContainer" key={item.city}>
                 <img src={item.image} alt={item.city} className="cityImage" />
                 <p className="cityText">{item.city}</p>
               </div>

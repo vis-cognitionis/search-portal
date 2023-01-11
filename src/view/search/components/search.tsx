@@ -38,7 +38,7 @@ const SearchArea = () => {
           .includes(searchValue.toLowerCase())
       );
     });
-    setFilteredItems(filter);
+    filter && setFilteredItems(filter);
   }, [searchValue]);
 
   const handleSearch = () => {
@@ -64,6 +64,7 @@ const SearchArea = () => {
                 filteredItems.slice(0, 3).map((item, index) => {
                   return (
                     <div
+                      key={item.city}
                       style={{
                         display: "flex",
                         flexDirection: "column",

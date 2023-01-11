@@ -6,4 +6,4 @@ Product comparison project was built using React + TypeScript + SCSS
 
 ## Live Link
 
-[search-portal]()
+[search-portal](https://search-portal.netlify.app/)

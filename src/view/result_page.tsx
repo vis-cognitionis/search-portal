@@ -146,6 +146,7 @@ const ResultPage = () => {
                 getCurrentTableData().map((item, index) => {
                   return (
                     <div
+                      key={item.city}
                       style={{
                         display: "flex",
                         flexDirection: "column",
@@ -197,6 +198,7 @@ const ResultPage = () => {
                 {sortButtons.map((button) => {
                   return (
                     <button
+                      key={button.name}
                       style={{
                         ...(isClicked === button.name && {
                           backgroundColor: "#B3B3B3",
